@@ -48,3 +48,6 @@ backend/venv/
 # Uploaded files contain personal information
 backend/media/
 media/
+
+# Django collected static files
+backend/staticfiles/
