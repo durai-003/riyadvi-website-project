@@ -1,0 +1,334 @@
+
+.health-page {
+  min-height: 100vh;
+  padding: 100px 7% 90px;
+  background: #090909;
+  color: #f7f4ed;
+}
+
+.health-hero {
+  max-width: 850px;
+  margin: 0 auto 55px;
+}
+
+.health-eyebrow {
+  color: #d6b66a;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.health-hero h1 {
+  margin: 22px 0;
+  font-size: clamp(38px, 6vw, 68px);
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.health-hero h1 span {
+  color: #d6b66a;
+}
+
+.health-hero > p:not(.health-eyebrow),
+.health-results > p {
+  max-width: 650px;
+  color: #b7b3a9;
+  line-height: 1.8;
+}
+
+.health-progress {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  color: #d6b66a;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.health-progress-track {
+  grid-column: 1 / -1;
+  height: 5px;
+  background: #292821;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.health-progress-track div {
+  height: 100%;
+  background: #d6b66a;
+  transition: width 0.3s ease;
+}
+
+.health-form,
+.health-results {
+  max-width: 850px;
+  margin: auto;
+}
+
+.health-question {
+  min-width: 0;
+  margin: 0 0 22px;
+  padding: 25px;
+  border: 1px solid #302d25;
+  border-radius: 14px;
+  background: #11110f;
+}
+
+.health-question legend {
+  padding: 0 8px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.health-question legend span {
+  margin-right: 8px;
+  color: #d6b66a;
+}
+
+.health-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid #302d25;
+  border-radius: 9px;
+  color: #d1cec6;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.health-option:has(input:checked) {
+  border-color: #d6b66a;
+  background: #242016;
+  color: #fff;
+}
+
+.health-option input {
+  margin-top: 5px;
+  accent-color: #d6b66a;
+}
+
+.health-submit {
+  margin-top: 20px;
+  padding: 15px 24px;
+  border: 0;
+  border-radius: 8px;
+  background: #d6b66a;
+  color: #111;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.health-submit:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.health-note {
+  color: #8f8b81;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.health-results {
+  padding: 35px;
+  border: 1px solid #3b3421;
+  border-radius: 16px;
+  background: #11110f;
+}
+
+.health-results h2 {
+  font-size: clamp(26px, 4vw, 38px);
+}
+
+.health-score {
+  display: flex;
+  align-items: baseline;
+  margin: 20px 0;
+  color: #d6b66a;
+}
+
+.health-score strong {
+  font-size: 64px;
+}
+
+.health-score span {
+  color: #b7b3a9;
+}
+
+.health-results h3 {
+  margin-top: 30px;
+}
+
+.health-results li {
+  margin: 14px 0;
+  color: #d1cec6;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .health-page {
+    padding: 75px 5% 55px;
+  }
+
+  .health-question {
+    padding: 18px;
+  }
+
+  .health-results {
+    padding: 23px;
+  }
+}
+
+
+/* Multi-step assessment additions */
+
+.health-step {
+  margin-bottom: 24px;
+}
+
+.health-step > h2 {
+  margin: 0 0 10px;
+  font-size: clamp(24px, 4vw, 34px);
+  color: #f7f4ed;
+}
+
+.health-step-description {
+  margin-bottom: 24px;
+  color: #b7b3a9;
+  line-height: 1.7;
+}
+
+.health-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.health-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: #d6b66a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.health-field input {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 14px 15px;
+  border: 1px solid #39352b;
+  border-radius: 8px;
+  outline: none;
+  background: #11110f;
+  color: #f7f4ed;
+  font: inherit;
+  font-weight: 400;
+  transition: border-color 0.2s ease;
+}
+
+.health-field input::placeholder {
+  color: #777368;
+}
+
+.health-field input:focus {
+  border-color: #d6b66a;
+}
+
+.health-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.health-actions .health-submit {
+  margin-top: 0;
+  margin-left: auto;
+}
+
+.health-back {
+  padding: 14px 22px;
+  border: 1px solid #494233;
+  border-radius: 8px;
+  background: transparent;
+  color: #f7f4ed;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.health-back:hover {
+  border-color: #d6b66a;
+  color: #d6b66a;
+}
+
+.health-back:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.health-error {
+  padding: 13px 15px;
+  border: 1px solid #8c4545;
+  border-radius: 8px;
+  background: #241313;
+  color: #ffb4b4;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.health-review {
+  padding: 22px;
+  border: 1px solid #302d25;
+  border-radius: 12px;
+  background: #11110f;
+  overflow-wrap: anywhere;
+}
+
+.health-review h3 {
+  color: #d6b66a;
+}
+
+.health-review p {
+  color: #d1cec6;
+  line-height: 1.7;
+}
+
+.health-review strong {
+  color: #f7f4ed;
+}
+
+.health-success {
+  color: #d6b66a !important;
+  overflow-wrap: anywhere;
+}
+
+.health-submit:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+
+@media (max-width: 600px) {
+  .health-fields {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .health-actions {
+    align-items: stretch;
+  }
+
+  .health-actions .health-submit,
+  .health-back {
+    padding: 13px 16px;
+  }
+
+  .health-review {
+    padding: 16px;
+  }
+}

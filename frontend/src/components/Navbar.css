@@ -1,0 +1,158 @@
+
+.site-header {
+  width: 100%;
+  min-height: 88px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: #080808;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+  position: relative;
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.brand-mark {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  font-size: 27px;
+  font-weight: 700;
+  font-family: Georgia, serif;
+}
+
+.brand-name {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.brand-name span {
+  display: block;
+  margin-top: 5px;
+  color: #d4af37;
+  font-size: 9px;
+  letter-spacing: 2.5px;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-link,
+.mobile-nav-link {
+  color: #b9b9b9;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.nav-link {
+  font-size: 13px;
+}
+
+.nav-link:hover,
+.nav-link.active,
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  color: #d4af37;
+}
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 18px;
+  background: #d4af37;
+  color: #080808;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.25s ease;
+}
+
+.nav-cta:hover {
+  background: #f0d477;
+}
+
+.mobile-menu,
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  .site-header {
+    padding: 0 4%;
+  }
+
+  .desktop-nav {
+    gap: 14px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    min-height: 75px;
+    padding: 0 5%;
+    flex-wrap: wrap;
+  }
+
+  .desktop-nav,
+  .desktop-cta {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: grid;
+    place-items: center;
+    padding: 8px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    background: transparent;
+    color: #d4af37;
+    cursor: pointer;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 12px 5% 24px;
+    background: #080808;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+    box-shadow: 0 18px 25px rgba(0, 0, 0, 0.35);
+  }
+
+  .mobile-nav-link {
+    padding: 15px 0;
+    border-bottom: 1px solid #242424;
+    font-size: 14px;
+  }
+
+  .mobile-cta {
+    margin-top: 18px;
+    align-self: flex-start;
+  }
+}

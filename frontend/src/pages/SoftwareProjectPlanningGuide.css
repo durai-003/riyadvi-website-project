@@ -1,0 +1,376 @@
+
+.planning-page {
+  min-height: 100vh;
+  padding: 100px 7% 80px;
+  background: #090909;
+  color: #f7f4ed;
+}
+
+.planning-hero {
+  max-width: 950px;
+  margin: 0 auto 100px;
+}
+
+.planning-eyebrow {
+  color: #d6b66a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.planning-hero h1 {
+  margin: 22px 0;
+  font-size: clamp(42px, 7vw, 78px);
+  line-height: 1.08;
+  letter-spacing: -2px;
+}
+
+.planning-hero h1 span {
+  color: #d6b66a;
+}
+
+.planning-hero > p:not(.planning-eyebrow),
+.planning-intro > p,
+.planning-phase-content > p,
+.planning-bottom > p:not(.planning-eyebrow) {
+  max-width: 650px;
+  color: #b7b3a9;
+  line-height: 1.8;
+}
+
+.planning-cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 22px;
+  border-radius: 8px;
+  background: #d6b66a;
+  color: #111;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.planning-intro {
+  max-width: 1100px;
+  margin: 0 auto 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: end;
+}
+
+.planning-intro h2,
+.planning-bottom h2 {
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.2;
+}
+
+.planning-progress,
+.planning-phases {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.planning-progress {
+  padding: 22px;
+  margin-bottom: 25px;
+  border: 1px solid #302d25;
+  border-radius: 12px;
+  background: #11110f;
+}
+
+.planning-progress > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: #d6b66a;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.planning-progress strong {
+  color: #f7f4ed;
+}
+
+.planning-progress-track {
+  height: 5px;
+  margin-top: 16px;
+  border-radius: 10px;
+  background: #292821;
+  overflow: hidden;
+}
+
+.planning-progress-track div {
+  height: 100%;
+  background: #d6b66a;
+  transition: width 0.25s ease;
+}
+
+.planning-progress > p {
+  margin-bottom: 0;
+  color: #b7b3a9;
+  font-size: 12px;
+}
+
+.planning-phase {
+  margin-bottom: 14px;
+  border: 1px solid #302d25;
+  border-radius: 12px;
+  background: #11110f;
+  overflow: hidden;
+}
+
+.planning-phase-heading {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  border: 0;
+  background: transparent;
+  color: #f7f4ed;
+  text-align: left;
+  cursor: pointer;
+}
+
+.planning-number {
+  color: #d6b66a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.planning-phase-title {
+  display: grid;
+  flex: 1;
+  gap: 6px;
+}
+
+.planning-phase-title strong {
+  font-size: 18px;
+}
+
+.planning-phase-title small {
+  color: #aaa59a;
+}
+
+.planning-toggle {
+  color: #d6b66a;
+  font-size: 27px;
+}
+
+.planning-phase-content {
+  padding: 0 25px 25px 68px;
+}
+
+.planning-task {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 12px;
+  padding: 13px;
+  border: 1px solid #302d25;
+  border-radius: 8px;
+  color: #d1cec6;
+  cursor: pointer;
+}
+
+.planning-task input {
+  accent-color: #d6b66a;
+}
+
+.planning-task:has(input:checked) span {
+  color: #9f9a8e;
+  text-decoration: line-through;
+}
+
+.planning-bottom {
+  max-width: 1100px;
+  margin: 90px auto 0;
+  padding: 45px;
+  border: 1px solid #3b3421;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #18160f, #0d0d0c);
+}
+
+@media (max-width: 700px) {
+  .planning-page {
+    padding: 75px 5% 55px;
+  }
+
+  .planning-hero {
+    margin-bottom: 65px;
+  }
+
+  .planning-intro {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .planning-phase-heading {
+    gap: 12px;
+    padding: 18px;
+  }
+
+  .planning-phase-content {
+    padding: 0 18px 20px;
+  }
+
+  .planning-bottom {
+    padding: 25px;
+    margin-top: 60px;
+  }
+}
+
+
+/* Planning Guide lead form */
+
+.planning-lead-form {
+  width: 100%;
+  max-width: 680px;
+  margin: 32px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  text-align: left;
+}
+
+.planning-lead-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.planning-lead-field label {
+  color: #e7c66b;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.planning-lead-field input {
+  width: 100%;
+  min-height: 48px;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid rgba(231, 198, 107, 0.4);
+  border-radius: 6px;
+  background: #111;
+  color: #fff;
+  font: inherit;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.planning-lead-field input::placeholder {
+  color: #999;
+}
+
+.planning-lead-field input:focus {
+  border-color: #e7c66b;
+  box-shadow: 0 0 0 3px rgba(231, 198, 107, 0.12);
+}
+
+.planning-lead-submit {
+  grid-column: 1 / -1;
+  justify-self: start;
+  cursor: pointer;
+  font: inherit;
+}
+
+.planning-lead-submit:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.planning-lead-error,
+.planning-lead-success,
+.planning-lead-note {
+  grid-column: 1 / -1;
+}
+
+.planning-lead-error {
+  margin: 0;
+  color: #ff8b8b;
+  overflow-wrap: anywhere;
+}
+
+.planning-lead-success {
+  margin: 0;
+  color: #8de0a5;
+  overflow-wrap: anywhere;
+}
+
+.planning-lead-note {
+  margin: 0;
+  color: #aaa;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .planning-lead-form {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .planning-lead-submit {
+    width: 100%;
+    justify-self: stretch;
+  }
+}
+
+
+/* Downloadable Software Project Planning Guide */
+
+.planning-download {
+  max-width: 1100px;
+  margin: 45px auto 0;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  border: 1px solid #3b3421;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #18160f, #0d0d0c);
+}
+
+.planning-download-copy {
+  max-width: 600px;
+}
+
+.planning-download h2 {
+  margin: 12px 0;
+  color: #f7f4ed;
+  font-size: clamp(25px, 3vw, 36px);
+  line-height: 1.2;
+}
+
+.planning-download-copy > p:last-child {
+  color: #b7b3a9;
+  line-height: 1.8;
+}
+
+.planning-download-button {
+  flex-shrink: 0;
+  text-align: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.planning-download-button:hover {
+  background: #e6ca82;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .planning-download {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+  }
+
+  .planning-download-button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

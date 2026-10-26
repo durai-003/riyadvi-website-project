@@ -1,0 +1,156 @@
+
+.article-page {
+  min-height: 100vh;
+  padding: 45px 7% 90px;
+  background: #080808;
+  color: #fff;
+}
+
+.article-header {
+  max-width: 900px;
+  margin: auto;
+}
+
+.article-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #aaa;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.article-back:hover {
+  color: #d4af37;
+}
+
+.article-eyebrow {
+  margin-top: 70px;
+  color: #d4af37;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.article-header > h1 {
+  margin: 22px 0;
+  font-size: clamp(36px, 6vw, 65px);
+  line-height: 1.15;
+  letter-spacing: -2px;
+}
+
+.article-summary {
+  max-width: 700px;
+  color: #aaa;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.article-meta {
+  display: flex;
+  gap: 25px;
+  margin-top: 25px;
+  color: #999;
+  font-size: 12px;
+}
+
+.article-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.article-cover {
+  display: flex;
+  position: relative;
+  min-height: 260px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+  border: 1px solid #342b15;
+  background: radial-gradient(circle at center, #30250d, #101010 70%);
+}
+
+.article-cover > span {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #d4af37;
+}
+
+.article-cover h2 {
+  color: #e5d39a;
+  font-size: clamp(16px, 3vw, 26px);
+  letter-spacing: 4px;
+}
+
+.article-body {
+  max-width: 720px;
+  margin: 60px auto 0;
+}
+
+.article-body section {
+  margin-bottom: 38px;
+}
+
+.article-body section h2 {
+  margin-bottom: 15px;
+  font-size: 25px;
+  line-height: 1.4;
+}
+
+.article-body section p {
+  color: #b5b5b5;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.article-end {
+  margin-top: 55px;
+  padding: 30px;
+  border: 1px solid #303030;
+  background: #101010;
+}
+
+.article-end p {
+  color: #aaa;
+}
+
+.article-end a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  color: #d4af37;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .article-page {
+    padding: 35px 6% 60px;
+  }
+
+  .article-eyebrow {
+    margin-top: 55px;
+  }
+
+  .article-header > h1 {
+    letter-spacing: -1px;
+  }
+
+  .article-cover {
+    min-height: 200px;
+  }
+
+  .article-cover h2 {
+    letter-spacing: 2px;
+  }
+
+  .article-body {
+    margin-top: 40px;
+  }
+
+  .article-body section h2 {
+    font-size: 22px;
+  }
+}

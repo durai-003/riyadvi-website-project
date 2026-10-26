@@ -1,0 +1,176 @@
+
+.career-detail {
+  min-height: 100vh;
+  background: #080808;
+  color: #fff;
+}
+
+.career-detail-hero {
+  padding: 45px 7% 85px;
+  background: radial-gradient(ellipse at 85% 30%, #30250d, transparent 45%);
+}
+
+.career-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #aaa;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.career-back:hover {
+  color: #d4af37;
+}
+
+.career-eyebrow {
+  margin-top: 65px;
+  color: #d4af37;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+}
+
+.career-detail-hero h1 {
+  margin: 20px 0;
+  font-size: clamp(40px, 7vw, 75px);
+  letter-spacing: -2px;
+}
+
+.career-description {
+  max-width: 650px;
+  color: #aaa;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.career-details-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.career-details-meta span,
+.career-skill-list span {
+  padding: 10px 13px;
+  border: 1px solid #333;
+  color: #ccc;
+  font-size: 12px;
+}
+
+.career-sample-note {
+  max-width: 650px;
+  margin-top: 25px;
+  color: #999;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.career-apply-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  padding: 15px 20px;
+  background: #d4af37;
+  color: #080808;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.career-apply-button:hover {
+  background: #f0d477;
+}
+
+.career-detail-content {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 55px;
+  padding: 75px 7%;
+  border-top: 1px solid #292929;
+}
+
+.career-detail-content h2,
+.career-detail-bottom h2 {
+  margin-top: 18px;
+  font-size: clamp(27px, 3.5vw, 38px);
+}
+
+.career-responsibilities {
+  margin-top: 30px;
+}
+
+.career-responsibilities > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 17px 0;
+  border-bottom: 1px solid #292929;
+}
+
+.career-responsibilities svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #d4af37;
+}
+
+.career-responsibilities p {
+  margin: 0;
+  color: #bbb;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.career-skills {
+  align-self: start;
+  padding: 25px;
+  border: 1px solid #303030;
+  background: #101010;
+}
+
+.career-skills .career-eyebrow {
+  margin-top: 0;
+}
+
+.career-skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.career-detail-bottom {
+  padding: 70px 7%;
+  text-align: center;
+  border-top: 1px solid #292929;
+  background: radial-gradient(ellipse at center, #211b0c, #080808 70%);
+}
+
+.career-detail-bottom p {
+  margin-top: 15px;
+  color: #aaa;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+  .career-detail-hero {
+    padding: 35px 6% 65px;
+  }
+
+  .career-detail-hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .career-detail-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 55px 6%;
+  }
+
+  .career-detail-bottom {
+    padding: 55px 6%;
+  }
+}

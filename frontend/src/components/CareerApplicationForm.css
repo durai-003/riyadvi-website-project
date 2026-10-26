@@ -1,0 +1,152 @@
+.career-application {
+  width: min(100% - 40px, 820px);
+  margin: 64px auto;
+  padding: 36px;
+  color: #f5f1e8;
+  background: #121212;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 16px;
+  scroll-margin-top: 100px;
+}
+
+.career-application-heading {
+  margin-bottom: 28px;
+}
+
+.career-application-eyebrow {
+  color: #d4af37;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.career-application-heading h2 {
+  margin: 12px 0;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+}
+
+.career-application-heading > p:last-child {
+  color: #bdb7aa;
+  line-height: 1.7;
+}
+
+.career-position {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #1c1b18;
+  border-left: 3px solid #d4af37;
+}
+
+.career-position span {
+  color: #bdb7aa;
+  font-size: 0.85rem;
+}
+
+.career-position strong {
+  color: #f0d477;
+}
+
+.career-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.career-application-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: #e8e1d2;
+  font-size: 0.92rem;
+}
+
+.career-application-form input,
+.career-application-form textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 13px 14px;
+  color: #fff;
+  background: #1c1c1c;
+  border: 1px solid #48443a;
+  border-radius: 7px;
+  font: inherit;
+}
+
+.career-application-form input:focus,
+.career-application-form textarea:focus {
+  outline: 2px solid #d4af37;
+  outline-offset: 2px;
+  border-color: #d4af37;
+}
+
+.career-application-form input[type="file"] {
+  padding: 10px;
+  font-size: 0.82rem;
+}
+
+.career-message-field {
+  margin-top: 20px;
+}
+
+.career-application-form textarea {
+  resize: vertical;
+}
+
+.career-submit-btn {
+  margin-top: 22px;
+  padding: 14px 20px;
+  color: #111;
+  background: #d4af37;
+  border: 1px solid #d4af37;
+  border-radius: 7px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.career-submit-btn:hover:not(:disabled) {
+  background: #f0d477;
+}
+
+.career-submit-btn:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.career-form-error {
+  margin-top: 18px;
+  color: #ff9696;
+  overflow-wrap: anywhere;
+}
+
+.career-form-success {
+  margin-top: 18px;
+  color: #9ce0ac;
+  overflow-wrap: anywhere;
+}
+
+.career-privacy-note {
+  margin-top: 18px;
+  color: #aaa397;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .career-application {
+    width: calc(100% - 28px);
+    margin: 40px auto;
+    padding: 22px 18px;
+  }
+
+  .career-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .career-submit-btn {
+    width: 100%;
+  }
+}
