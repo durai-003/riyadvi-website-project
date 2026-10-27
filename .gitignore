@@ -51,3 +51,6 @@ media/
 
 # Django collected static files
 backend/staticfiles/
+
+# Old Aiven CA certificate
+backend/certs/
